@@ -90,7 +90,15 @@ int main()
         printf("Mesto %d vytvoreno v {%06.3f, %06.3f}\n", i, x, y);
     }
 
-    std::vector<int> mesta_index = 
+    std::vector<int> mesta_index;
+
+    for (int i = 0; i < mesta.size(); i++)
+    {
+        mesta_index.push_back(i);
+    }
+
+
+    std::sort(mesta_index.begin(), mesta_index.end());
 
     std::vector<int> nejlepsi;
     float nejlepsi_skore = INFINITY;
