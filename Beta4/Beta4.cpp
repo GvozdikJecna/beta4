@@ -53,15 +53,9 @@ int main()
         exit(1);
     }
 
-    if (pocet_mest > 20)
-    {
-        printf("Prilis velky pocet mest, musi byt mensi nez 21\n");
-        exit(1);
-    }
-
     unsigned int seed;
 
-    printf("Vyberte nahodny seed pro generaci pozic\n");
+    printf("Vyberte nahodny seed pro generaci pozic: ");
     scanf_s("%u", &seed);
 
     srand(seed);
@@ -77,7 +71,13 @@ int main()
 
         mesta.push_back({ x, y });
 
-        printf("Mesto %d vytvoreno v {%06.3f, %06.3f}\n", i, x, y);
+        if(pocet_mest < 1000)
+            printf("Mesto %d vytvoreno v {%06.3f, %06.3f}\n", i, x, y);
+    }
+
+    if (pocet_mest >= 1000)
+    {
+        printf("Z duvodu rychlosti nejsou vypsana mesta a jejich pozice\n");
     }
 
     std::vector<int> reseni;
@@ -119,15 +119,22 @@ int main()
 
 
     reseni_skore = hodnoceni(mesta, reseni);
-    
-    printf("Reseni s vzdalenosti %f se sklada z:\n", reseni_skore);
-
-    for (int i = 0; i < reseni.size() - 1; i++)
+    if (pocet_mest < 1000)
     {
-        printf("%d -> %d (%f)\n", reseni[i], reseni[i + 1], vzdalenost(mesta[reseni[i]], mesta[reseni[i + 1]]));
-    }
+        printf("Reseni s vzdalenosti %f se sklada z:\n", reseni_skore);
 
-    printf("%d -> %d (%f)\n", reseni[reseni.size() - 1], reseni[0], vzdalenost(mesta[reseni[reseni.size() - 1]], mesta[reseni[0]]));
+        for (int i = 0; i < reseni.size() - 1; i++)
+        {
+            printf("%d -> %d (%f)\n", reseni[i], reseni[i + 1], vzdalenost(mesta[reseni[i]], mesta[reseni[i + 1]]));
+        }
+
+        printf("%d -> %d (%f)\n", reseni[reseni.size() - 1], reseni[0], vzdalenost(mesta[reseni[reseni.size() - 1]], mesta[reseni[0]]));
+    }
+    else
+    {
+        printf("Reseni ma vzdalenost %f\nZ duvodu rychlosti neni vypsane reseni\n", reseni_skore);
+    }
+    
     
     auto end = std::chrono::high_resolution_clock::now();
 
