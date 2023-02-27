@@ -105,14 +105,14 @@ int main()
     {
         if (cislo_permutace % (pocet_permutaci / 100) == 0)
         {
-            printf("%llu%% hotovo\n", cislo_permutace / (pocet_permutaci / 100));
+            //printf("%llu%% hotovo\n", cislo_permutace / (pocet_permutaci / 100));
         }
 
         float skore = hodnoceni(mesta, mesta_index);
 
         if (skore < nejlepsi_skore)
         {
-            printf("Lepsi reseni bylo nalezeno, predchozi %f, nove %f\n", nejlepsi_skore, skore);
+            //printf("Lepsi reseni bylo nalezeno, predchozi %f, nove %f\n", nejlepsi_skore, skore);
 
             nejlepsi_skore = skore;
             nejlepsi = mesta_index;
