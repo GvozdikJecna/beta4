@@ -68,7 +68,12 @@ int main()
 
     printf("Pro %d mest budeme muset spocitat %llu permutaci\n", pocet_mest, pocet_permutaci);
 
-    srand(time(NULL));
+    unsigned int seed;
+
+    printf("Vyberte nahodny seed pro generaci pozic\n");
+    scanf_s("%u", &seed);
+    
+    srand(seed);
 
     std::vector<City> mesta;
 
