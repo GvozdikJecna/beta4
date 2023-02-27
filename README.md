@@ -12,8 +12,8 @@ On top of this, every solution must begin and end at the same city.
 | ------- | --------------------- | --------- | ---------- | ---------------------------------------------------------------------------------- |
 | 1.0     | Bruteforce            | ❌         | 13         | A simple bruteforce approach to finding the best solution.                         |
 | 2.0     | Bruteforce threaded   | ✔         | 14         | Using as many threads as the CPU has, we speed up the calculation.                 |
-| 3.0     | Approximate threaded  | ✔         | ?          | Using the nearest fragment algorithm we can calculate a good solution much faster. |
-| 4.0     | Distributed computing | ✔         | ?          | Not implemented.                                                                   |
+| 3.0     | Approximate threaded  | ❌         | ?          | Using the nearest fragment algorithm we can calculate a good solution much faster. |
+| 4.0     | Distributed computing | ?         | ?          | Not implemented.                                                                   |
 
 ## Usage
 
