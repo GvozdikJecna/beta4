@@ -11,7 +11,7 @@ On top of this, every solution must begin and end at the same city.
 | Version | Method                | Threading | City Limit | Description                                                        |
 | ------- | --------------------- | --------- | ---------- | ------------------------------------------------------------------ |
 | 1.0     | Bruteforce            | ❌        | 11         | A simple bruteforce approach to finding the best solution.         |
-| 2.0     | Bruteforce threaded   | ✔         | 12         | Using as many threads as the CPU has, we speed up the calculation. |
+| 2.0     | Bruteforce threaded   | ✔         | 13         | Using as many threads as the CPU has, we speed up the calculation. |
 | 3.0     | x                     | ?         | ?          | Not implemented.                                                   |
 | 4.0     | Distributed computing | ✔         | ?          | Not implemented.                                                   |
 
