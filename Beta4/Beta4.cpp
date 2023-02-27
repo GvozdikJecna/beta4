@@ -155,7 +155,7 @@ int main()
     printf("Vyberte nahodny seed pro generaci pozic\n");
     scanf_s("%u", &seed);
 
-    srand(1);
+    srand(seed);
 
     std::vector<City> mesta;
 

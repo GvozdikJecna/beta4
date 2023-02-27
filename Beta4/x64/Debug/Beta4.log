@@ -1,7 +1,7 @@
 ﻿  Beta4.cpp
-C:\Users\gvozdik\Desktop\beta4\Beta4\Beta4.cpp(194,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\gvozdik\Desktop\beta4\Beta4\Beta4.cpp(196,119): warning C4244: 'argument': conversion from 'uint64_t' to 'int', possible loss of data
-C:\Users\gvozdik\Desktop\beta4\Beta4\Beta4.cpp(196,154): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\gvozdik\Desktop\beta4\Beta4\Beta4.cpp(198,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\gvozdik\Desktop\beta4\Beta4\Beta4.cpp(200,119): warning C4244: 'argument': conversion from 'uint64_t' to 'int', possible loss of data
+C:\Users\gvozdik\Desktop\beta4\Beta4\Beta4.cpp(200,154): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\type_traits(1488,67): warning C4244: 'argument': conversion from 'unsigned __int64' to 'int', possible loss of data
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\include\thread(51): message : see reference to function template instantiation 'void std::invoke<void(__cdecl *)(int,std::vector<City,std::allocator<City>> &,std::vector<int,std::allocator<int>>,uint64_t),unsigned __int64,std::reference_wrapper<std::vector<City,std::allocator<City>>>,std::vector<int,std::allocator<int>>,unsigned __int64>(_Callable &&,_Ty1 &&,std::reference_wrapper<std::vector<City,std::allocator<City>>> &&,std::vector<int,std::allocator<int>> &&,unsigned __int64 &&) noexcept(false)' being compiled
           with
@@ -17,9 +17,10 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.3132
               _Ty=unsigned __int64,
               _Fn=void (__cdecl &)(int,std::vector<City,std::allocator<City>> &,std::vector<int,std::allocator<int>>,uint64_t)
           ]
-C:\Users\gvozdik\Desktop\beta4\Beta4\Beta4.cpp(196): message : see reference to function template instantiation 'std::thread::thread<void(__cdecl &)(int,std::vector<City,std::allocator<City>> &,std::vector<int,std::allocator<int>>,uint64_t),unsigned __int64,std::reference_wrapper<std::vector<City,std::allocator<City>>>,std::vector<int,std::allocator<int>>,uint64_t,0>(_Fn,unsigned __int64 &&,std::reference_wrapper<std::vector<City,std::allocator<City>>> &&,std::vector<int,std::allocator<int>> &&,uint64_t &&)' being compiled
+C:\Users\gvozdik\Desktop\beta4\Beta4\Beta4.cpp(200): message : see reference to function template instantiation 'std::thread::thread<void(__cdecl &)(int,std::vector<City,std::allocator<City>> &,std::vector<int,std::allocator<int>>,uint64_t),unsigned __int64,std::reference_wrapper<std::vector<City,std::allocator<City>>>,std::vector<int,std::allocator<int>>,uint64_t,0>(_Fn,unsigned __int64 &&,std::reference_wrapper<std::vector<City,std::allocator<City>>> &&,std::vector<int,std::allocator<int>> &&,uint64_t &&)' being compiled
           with
           [
               _Fn=void (__cdecl &)(int,std::vector<City,std::allocator<City>> &,std::vector<int,std::allocator<int>>,uint64_t)
           ]
+  LINK : C:\Users\gvozdik\Desktop\beta4\x64\Debug\Beta4.exe not found or not built by the last incremental link; performing full link
   Beta4.vcxproj -> C:\Users\gvozdik\Desktop\beta4\x64\Debug\Beta4.exe
