@@ -140,7 +140,7 @@ int main()
 
     unsigned int seed;
 
-    printf("Vyberte nahodny seed pro generaci pozic\n");
+    printf("Vyberte nahodny seed pro generaci pozic: ");
     scanf_s("%u", &seed);
 
     srand(seed);

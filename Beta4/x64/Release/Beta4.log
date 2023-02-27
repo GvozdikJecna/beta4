@@ -21,8 +21,8 @@ C:\Users\ondra\Documents\CPPVS\beta4\Beta4\Beta4.cpp(190,190): message : see ref
               _Fn=void (__cdecl &)(int,std::vector<City,std::allocator<City>> &,std::vector<int,std::allocator<int>>,uint64_t)
           ]
   Generating code
-  5 of 317 functions ( 1.6%) were compiled, the rest were copied from previous compilation.
+  1 of 317 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    6 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   Beta4.vcxproj -> C:\Users\ondra\Documents\CPPVS\beta4\x64\Release\Beta4.exe
