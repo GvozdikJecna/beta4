@@ -87,7 +87,7 @@ void thread_runner(int id, std::vector<City>& mesta, std::vector<int> mesta_inde
 
 }
 
-std::vector<int> kth_permutation(int n, int k) {
+std::vector<int> kth_permutation(uint64_t n, uint64_t k) {
     uint64_t fact = factorial(n);
     std::vector<int> numbers;
 
