@@ -6,6 +6,7 @@
 
 #include <algorithm>
 #include <vector>
+#include <chrono>
 
 
 struct City
@@ -75,6 +76,8 @@ int main()
     
     srand(seed);
 
+    auto start = std::chrono::high_resolution_clock::now();
+
     std::vector<City> mesta;
 
     for (int i = 0; i < pocet_mest; i++)
@@ -129,6 +132,10 @@ int main()
     }
 
     printf("%d -> %d (%f)\n", nejlepsi[nejlepsi.size() - 1], nejlepsi[0], vzdalenost(mesta[nejlepsi[nejlepsi.size() - 1]], mesta[nejlepsi[0]]));
+
+    auto end = std::chrono::high_resolution_clock::now();
+
+    printf("Trvalo %lf sekund spocitat reseni.\n", (end-start).count() / 1000000000.0);
 
     system("pause");
 }
