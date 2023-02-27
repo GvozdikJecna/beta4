@@ -124,4 +124,6 @@ int main()
     }
 
     printf("%d -> %d (%f)\n", nejlepsi[nejlepsi.size() - 1], nejlepsi[0], vzdalenost(mesta[nejlepsi[nejlepsi.size() - 1]], mesta[nejlepsi[0]]));
+
+    system("pause");
 }
