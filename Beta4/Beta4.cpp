@@ -117,18 +117,6 @@ std::vector<int> kth_permutation(uint64_t n, uint64_t k) {
 
 int main()
 {
-    for (int j = 0; j < factorial(3); j++)
-    {
-        auto s = kth_permutation(3, j);
-
-        for (int i = 0; i < s.size(); i++)
-        {
-            printf("%d", s[i]);
-        }
-
-        printf("\n");
-    }
-
     int pocet_mest;
 
     printf("Vyberte pocet mest pro Travelling Salesman Problem: ");
